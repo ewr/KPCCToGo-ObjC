@@ -22,6 +22,7 @@
 		07ACA815153B8AA900E9B4C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ACA7F0153B8AA900E9B4C5 /* Foundation.framework */; };
 		07ACA81D153B8AA900E9B4C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07ACA81B153B8AA900E9B4C5 /* InfoPlist.strings */; };
 		07ACA820153B8AA900E9B4C5 /* KPCCToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ACA81F153B8AA900E9B4C5 /* KPCCToGoTests.m */; };
+		07CAC87015411A7900A31FB9 /* Prefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07CAC86F15411A7900A31FB9 /* Prefs.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +40,25 @@
 		07ACA7EE153B8AA900E9B4C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07ACA7F0153B8AA900E9B4C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07ACA7F2153B8AA900E9B4C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07ACA7F6153B8AA900E9B4C5 /* KPCCToGo-Info.plist */ = {isa = PBXFileReference; path = "KPCCToGo-Info.plist"; sourceTree = "<group>"; };
+		07ACA7F6153B8AA900E9B4C5 /* KPCCToGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KPCCToGo-Info.plist"; sourceTree = "<group>"; };
 		07ACA7F8153B8AA900E9B4C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07ACA7FA153B8AA900E9B4C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07ACA7FC153B8AA900E9B4C5 /* KPCCToGo-Prefix.pch */ = {isa = PBXFileReference; path = "KPCCToGo-Prefix.pch"; sourceTree = "<group>"; };
-		07ACA7FD153B8AA900E9B4C5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		07ACA7FC153B8AA900E9B4C5 /* KPCCToGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KPCCToGo-Prefix.pch"; sourceTree = "<group>"; };
+		07ACA7FD153B8AA900E9B4C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07ACA7FE153B8AA900E9B4C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07ACA801153B8AA900E9B4C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		07ACA804153B8AA900E9B4C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		07ACA806153B8AA900E9B4C5 /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		07ACA806153B8AA900E9B4C5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		07ACA807153B8AA900E9B4C5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		07ACA809153B8AA900E9B4C5 /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		07ACA809153B8AA900E9B4C5 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		07ACA80A153B8AA900E9B4C5 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		07ACA811153B8AA900E9B4C5 /* KPCCToGoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPCCToGoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ACA812153B8AA900E9B4C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		07ACA81A153B8AA900E9B4C5 /* KPCCToGoTests-Info.plist */ = {isa = PBXFileReference; path = "KPCCToGoTests-Info.plist"; sourceTree = "<group>"; };
+		07ACA81A153B8AA900E9B4C5 /* KPCCToGoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KPCCToGoTests-Info.plist"; sourceTree = "<group>"; };
 		07ACA81C153B8AA900E9B4C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07ACA81E153B8AA900E9B4C5 /* KPCCToGoTests.h */ = {isa = PBXFileReference; path = KPCCToGoTests.h; sourceTree = "<group>"; };
+		07ACA81E153B8AA900E9B4C5 /* KPCCToGoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPCCToGoTests.h; sourceTree = "<group>"; };
 		07ACA81F153B8AA900E9B4C5 /* KPCCToGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPCCToGoTests.m; sourceTree = "<group>"; };
+		07CAC86F15411A7900A31FB9 /* Prefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Prefs.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				07ACA7F7153B8AA900E9B4C5 /* InfoPlist.strings */,
 				07ACA7FA153B8AA900E9B4C5 /* main.m */,
 				07ACA7FC153B8AA900E9B4C5 /* KPCCToGo-Prefix.pch */,
+				07CAC86F15411A7900A31FB9 /* Prefs.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,7 +207,7 @@
 		07ACA7E1153B8AA800E9B4C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = KPCC;
 			};
 			buildConfigurationList = 07ACA7E4153B8AA800E9B4C5 /* Build configuration list for PBXProject "KPCCToGo" */;
@@ -233,6 +236,7 @@
 				07ACA7F9153B8AA900E9B4C5 /* InfoPlist.strings in Resources */,
 				07ACA802153B8AA900E9B4C5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				07ACA805153B8AA900E9B4C5 /* MainStoryboard_iPad.storyboard in Resources */,
+				07CAC87015411A7900A31FB9 /* Prefs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +452,7 @@
 				07ACA825153B8AA900E9B4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07ACA826153B8AA900E9B4C5 /* Build configuration list for PBXNativeTarget "KPCCToGoTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				07ACA828153B8AA900E9B4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
