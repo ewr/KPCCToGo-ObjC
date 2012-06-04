@@ -6,5 +6,7 @@
 	<integer>45</integer>
 	<key>topOfHour</key>
 	<false/>
+	<key>serverURL</key>
+	<string>http://scprdev.org:8000/kpcclive.mp3</string>
 </dict>
 </plist>

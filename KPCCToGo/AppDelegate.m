@@ -3,7 +3,7 @@
 //  KPCCToGo
 //
 //  Created by Eric Richardson on 4/15/12.
-//  Copyright (c) 2012 KPCC. All rights reserved.
+//  Copyright (c) 2012 Eric Richardson. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -11,6 +11,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize player;
 
 - (void)dealloc
 {
@@ -24,6 +25,28 @@
     NSString* prefPath = [[NSBundle mainBundle] pathForResource:@"Prefs" ofType:@"plist"];
     NSDictionary* userDefaults = [NSDictionary dictionaryWithContentsOfFile:prefPath];
     [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaults];
+    
+    // load AudioPlayer object
+    
+    //get the documents directory:
+    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //NSString *documentsDirectory = [paths objectAtIndex:0];
+    //make a file name to write the data to using the documents directory:
+    //NSString *apath = [NSString stringWithFormat:@"%@/pump.mp3", documentsDirectory];
+    
+    //NSString *apath = [NSString stringWithFormat:@"%@/pump.mp3", [[NSBundle mainBundle] resourcePath]];
+    //NSString *apath = [[NSBundle mainBundle] pathForResource:@"pump" ofType:@"mp3"];
+    //NSString *apathtmp = [[NSBundle mainBundle] pathForResource:@"pump" ofType:@"mp3"];
+    //NSLog(@"apathtmp is %@", apathtmp);
+    //NSURL *apath = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pump" ofType:@"mp3"]];
+    //NSURL *apath = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@/Library/Caches/pump.mp3", [[NSBundle mainBundle] resourcePath]]];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSURL *aurl = [[NSURL alloc] initFileURLWithPath:[NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0],@"pump.mp3"]];
+    
+    NSLog(@"apath is %@", aurl);
+    self.player = [AudioPlayer sharedPlayer]; 
+    [self.player initWithAudioPath:aurl];
     
     return YES;
 }
